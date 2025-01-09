@@ -86,32 +86,32 @@ function homeFun() {
 function faqFun() {
   document.title = 'mingle FAQ - Frequently Asked Questions'
   updateDes('Find answers to your mingle queries in our FAQ section, covering product features, troubleshooting, and more. Ideal for all users seeking a smooth experience.')
-  updateCanonical('https://mingle.shop/FAQ')
+  updateCanonical('https://minglegame.store/FAQ')
   updateFun("main-content", "/src/faq.html", "home")
 }
 function modsFun() {
   document.title = 'Explore mingle Videos: Your Go-To Source for Engaging Content'
   updateDes('mingle Videos offers engaging content on diverse topics. Join our community to explore entertainment, education, and inspiration.')
-  updateCanonical('https://mingle.shop/videos')
+  updateCanonical('https://minglegame.store/videos')
   updateFun("main-content", "/src/videos.html", "home")
 }
 function privacyFun() {
   document.title = 'mingle Privacy Policy - Your Data Protection Rights and Practices'
   updateDes('Review mingle Privacy Policy for details on personal data collection, usage, and protection. We prioritize your privacy and outline rights and responsibilities.')
-  updateCanonical('https://mingle.shop/Privacy')
+  updateCanonical('https://minglegame.store/Privacy')
   updateFun("main-content", "/src/privacy.html", "home")
 }
 function termsFun() {
   document.title = 'mingle Canonical - Contact mingle | Get in Touch with Us'
   updateDes('Contact mingle for support and inquiries via our contact page for emails, phone numbers, and office locations.')
-  updateCanonical('https://mingle.shop/ContactUs')
+  updateCanonical('https://minglegame.store/ContactUs')
   updateFun("main-content", "/src/contactus.html", "home")
 }
 
 function shopFun() {
   document.title = 'mingle Shop - Your Ultimate Destination for Unique Products'
   updateDes('Trendy fashion, gadgets, home decor. Exclusive deals, fast shipping. Join our satisfied community. Shop now!')
-  updateCanonical('https://mingle.shop/Shop')
+  updateCanonical('https://minglegame.store/Shop')
   updateFun("main-content", "/src/shop.html", "home")
 }
 
@@ -120,7 +120,7 @@ function downloadFun() {
   //alert('hello python');
   document.title = 'mingle Download - mingle Game APK Download Free For Android'
   updateDes('Download mingle Game APK for free on Android. Get the latest version for an adventurous experience. Start playing now!')
-  updateCanonical('https://mingle.shop/Download')
+  updateCanonical('https://minglegame.store/Download')
   updateFun("main-content", "/src/download.html", "home")
 }
 
