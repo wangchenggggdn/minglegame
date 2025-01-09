@@ -15,6 +15,7 @@ export default defineConfig({
         privacy: resolve(__dirname, 'src/privacy.html'),
         contactus: resolve(__dirname, 'src/contactus.html'),
         download: resolve(__dirname, 'src/download.html'),
+        game: resolve(__dirname, 'src/game.html'),
       },
     },
   },
