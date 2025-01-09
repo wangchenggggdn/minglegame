@@ -15,8 +15,6 @@ export default defineConfig({
         privacy: resolve(__dirname, 'src/privacy.html'),
         contactus: resolve(__dirname, 'src/contactus.html'),
         download: resolve(__dirname, 'src/download.html'),
-        shop: resolve(__dirname, 'src/shop.html'),
-        videos: resolve(__dirname, 'src/videos.html'),
       },
     },
   },
