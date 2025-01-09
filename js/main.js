@@ -118,8 +118,8 @@ function shopFun() {
 
 function downloadFun() {
   //alert('hello python');
-  document.title = 'mingle Download - mingle Game APK Download Free For Android'
-  updateDes('Download mingle Game APK for free on Android. Get the latest version for an adventurous experience. Start playing now!')
+  document.title = 'Mingle Download - Mingle Game APK Download Free For Android'
+  updateDes('Download Mingle Game APK for free on Android. Get the latest version for an adventurous experience. Start playing now!')
   updateCanonical('https://minglegame.store/Download')
   updateFun("main-content", "/src/download.html", "home")
 }
