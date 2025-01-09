@@ -16,6 +16,7 @@ function P() {
     '/ContactUs': termsFun,
     '/Download': downloadFun,
     '/SendEmail': sendEmail,
+    '/Game': gameFun,
   };
   const a = window.location.pathname,
     s = r[a] || homeFun;
@@ -114,12 +115,17 @@ function shopFun() {
   updateCanonical('https://minglegame.store/Shop')
   updateFun("main-content", "/src/shop.html", "home")
 }
-
+function gameFun() {
+  document.title = 'mingle Shop - Your Ultimate Destination for Unique Products'
+  updateDes('Trendy fashion, gadgets, home decor. Exclusive deals, fast shipping. Join our satisfied community. Shop now!')
+  updateCanonical('https://minglegame.store/Game')
+  updateFun("main-content", "/src/game.html", "home")
+}
 
 function downloadFun() {
   //alert('hello python');
-  document.title = 'Mingle Download - Mingle Game APK Download Free For Android'
-  updateDes('Download Mingle Game APK for free on Android. Get the latest version for an adventurous experience. Start playing now!')
+  document.title = 'Mingle Play - Mingle Game APK Download Free For Android'
+  updateDes('Mingle Game APK for free on Android. Get the latest version for an adventurous experience. Start playing now!')
   updateCanonical('https://minglegame.store/Download')
   updateFun("main-content", "/src/download.html", "home")
 }
