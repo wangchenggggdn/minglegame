@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations and transitions */
+@layer utilities {
+  .transition-smooth {
+    @apply transition-all duration-300 ease-in-out;
+  }
+}
+#myVideo {
+  background-image: url('https://shap10r-game.online/images/1733232544054.jpg');
+  background-size: cover;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+pre {
+  white-space: -pre-wrap; /* IE6-7 */
+  white-space: -o-pre-wrap; /* Opera */
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: pre-wrap; /* CSS3 */
+  word-wrap: break-word; /* IE5+ */
+}
