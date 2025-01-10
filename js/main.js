@@ -116,15 +116,31 @@ function shopFun() {
   updateFun("main-content", "/src/shop.html", "home")
 }
 function gameFun() {
-  document.title = 'Mingle Game Shop - Your Ultimate Destination for Unique Products'
-  updateDes('Trendy fashion, gadgets, home decor. Exclusive deals, fast shipping. Join our satisfied community. Shop now!')
+  //window.open('https://minglegame.store/src/game.html', '_blank');
+  document.title = 'Mingle Game Feee Play - Enjoy Endless Fun and Excitement'
+  updateDes('Explore the exciting world of the Mingle Game with our free play option!')
   updateCanonical('https://minglegame.store/Game')
-  updateFun("main-content", "/src/game.html", "home")
+  //updateFun("main-content", "/src/game.html", "home")
+
+  fetch("/src/game.html")
+  .then(response => response.text())
+  .then(html => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    
+    // 提取特定id的div内容
+    const divContent = doc.getElementById("home").innerHTML;
+    //alert(divContent);
+    document.getElementById("main_body").innerHTML = html;
+    // Event listeners
+    //document.getElementById('emailForm').addEventListener('submit', sendEmail);
+  })
+  .catch(error => console.error('Error fetching the HTML:', error));
 }
 
 function downloadFun() {
   //alert('hello python');
-  document.title = 'Mingle Play - Mingle Game APK Download Free For Android'
+  document.title = 'Mingle Game Download - Mingle Game APK Download Free For Android'
   updateDes('Mingle Game APK for free on Android. Get the latest version for an adventurous experience. Start playing now!')
   updateCanonical('https://minglegame.store/Download')
   updateFun("main-content", "/src/download.html", "home")
