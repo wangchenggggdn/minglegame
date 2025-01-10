@@ -4,7 +4,6 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        handwriting: ['"Great Vibes"', 'cursive'],
         sans: [
           '-apple-system',
           'BlinkMacSystemFont',
